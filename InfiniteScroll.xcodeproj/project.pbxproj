@@ -16,6 +16,8 @@
 		6A653B482C60BCF500AFEB2C /* InfiniteScrollTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A653B472C60BCF500AFEB2C /* InfiniteScrollTests.swift */; };
 		6A653B522C60BCF500AFEB2C /* InfiniteScrollUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A653B512C60BCF500AFEB2C /* InfiniteScrollUITests.swift */; };
 		6A653B542C60BCF500AFEB2C /* InfiniteScrollUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A653B532C60BCF500AFEB2C /* InfiniteScrollUITestsLaunchTests.swift */; };
+		6A653B622C60BE4A00AFEB2C /* UIScrollView_InfiniteScroll in Frameworks */ = {isa = PBXBuildFile; productRef = 6A653B612C60BE4A00AFEB2C /* UIScrollView_InfiniteScroll */; };
+		6A653B642C60BFF500AFEB2C /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A653B632C60BFF500AFEB2C /* APICaller.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,7 @@
 		6A653B4D2C60BCF500AFEB2C /* InfiniteScrollUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InfiniteScrollUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A653B512C60BCF500AFEB2C /* InfiniteScrollUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfiniteScrollUITests.swift; sourceTree = "<group>"; };
 		6A653B532C60BCF500AFEB2C /* InfiniteScrollUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfiniteScrollUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		6A653B632C60BFF500AFEB2C /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A653B622C60BE4A00AFEB2C /* UIScrollView_InfiniteScroll in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,6 +106,7 @@
 				6A653B302C60BCF400AFEB2C /* AppDelegate.swift */,
 				6A653B322C60BCF400AFEB2C /* SceneDelegate.swift */,
 				6A653B342C60BCF400AFEB2C /* ViewController.swift */,
+				6A653B632C60BFF500AFEB2C /* APICaller.swift */,
 				6A653B362C60BCF400AFEB2C /* Main.storyboard */,
 				6A653B392C60BCF500AFEB2C /* Assets.xcassets */,
 				6A653B3B2C60BCF500AFEB2C /* LaunchScreen.storyboard */,
@@ -143,6 +148,9 @@
 			dependencies = (
 			);
 			name = InfiniteScroll;
+			packageProductDependencies = (
+				6A653B612C60BE4A00AFEB2C /* UIScrollView_InfiniteScroll */,
+			);
 			productName = InfiniteScroll;
 			productReference = 6A653B2D2C60BCF400AFEB2C /* InfiniteScroll.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +223,9 @@
 				Base,
 			);
 			mainGroup = 6A653B242C60BCF400AFEB2C;
+			packageReferences = (
+				6A653B602C60BE4A00AFEB2C /* XCRemoteSwiftPackageReference "UIScrollView-InfiniteScroll" */,
+			);
 			productRefGroup = 6A653B2E2C60BCF400AFEB2C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -261,6 +272,7 @@
 				6A653B352C60BCF400AFEB2C /* ViewController.swift in Sources */,
 				6A653B312C60BCF400AFEB2C /* AppDelegate.swift in Sources */,
 				6A653B332C60BCF400AFEB2C /* SceneDelegate.swift in Sources */,
+				6A653B642C60BFF500AFEB2C /* APICaller.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -607,6 +619,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6A653B602C60BE4A00AFEB2C /* XCRemoteSwiftPackageReference "UIScrollView-InfiniteScroll" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pronebird/UIScrollView-InfiniteScroll.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6A653B612C60BE4A00AFEB2C /* UIScrollView_InfiniteScroll */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6A653B602C60BE4A00AFEB2C /* XCRemoteSwiftPackageReference "UIScrollView-InfiniteScroll" */;
+			productName = UIScrollView_InfiniteScroll;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6A653B252C60BCF400AFEB2C /* Project object */;
 }
